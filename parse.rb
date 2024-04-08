@@ -24,19 +24,22 @@ SC_SERIALIZABLE = "\x02".b
 SC_EXTERNALIZABLE = "\x04".b
 SC_ENUM = "\x10".b
 class JavaObjectStream
-  attr_accessor :objects
+  attr_accessor :handles, :objects
   def initialize(raw)
     @raw = raw.force_encoding Encoding::ASCII_8BIT
     @ptr = 0
 
     @handles = [] # reference handles
+    @objects = []
 
     raise "ACED0005 header not found" unless raw[0..3] == STREAM_MAGIC + STREAM_VERSION
     @ptr += 4
 
     while @ptr < @raw.size-1
+      debug_anchor = @ptr
       puts "_________Root_level_content_________"
-      read_content
+      type, content = read_content
+      @objects.push [type, debug_anchor, content]
     end
   end
 
@@ -194,7 +197,7 @@ class JavaObjectStream
       puts "End of classdata for object declared at #{debug_anchor}"
 
       @handles[ref][:values] = values
-      return :object, values
+      return :object, @handles[ref]
 
     when TC_STRING
       str_length = @raw[@ptr..@ptr+1].unpack1 "n";
@@ -309,10 +312,14 @@ class JavaObjectStream
         puts "Reading annotation at #{@ptr}"
         type, annotation = read_content
         puts "read annotation ending at #{@ptr}"
-        if type == :block_end
+
+        case type
+        when :ref
+          annotation = @handles[annotation]
+        when :block_end
           puts "block end reached for annotation at #{@ptr-1}"
           break
-        elsif type == :eof
+        when :eof
           break
         end
         annotations.push annotation
@@ -340,6 +347,8 @@ class JavaObjectStream
         elsif type == :class_desc
         elsif type == :string
         elsif type == :null
+        elsif type == :eof
+          break
         else
           raise "unknown object field type #{type} at #{@ptr}"
         end
@@ -418,3 +427,4 @@ end
 raw = File.open("./weird.qpdata","rb"){|f| f.read}
 #raw = File.open("./test_class_stream.stream","rb"){|f| f.read}
 javastream1 = JavaObjectStream.new raw
+binding.pry
