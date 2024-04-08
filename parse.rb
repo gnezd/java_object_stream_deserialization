@@ -213,14 +213,15 @@ class JavaObjectStream
 
     when TC_ARRAY
       puts "Array at #{@ptr-1}"
+      object = {type: :array}
       type, class_spec = read_content([TC_CLASSDESC, TC_REFERENCE])
-      if type == :class_spec
-        reg_handle(class_spec) 
-      elsif type == :ref
+      if type == :ref
         puts "Referencing class spec # #{class_spec}"
         class_spec = @handles[class_spec]
         puts "Referenced: #{class_spec}"
       end
+      object[:class] = class_spec
+      handleid = reg_handle(object)
       arr_size, arr_items = @raw[@ptr..@ptr+7].unpack "nn"; @ptr += 4
       puts [arr_size, arr_items]
       arr_size = 4 if arr_size == 0 && class_spec[:name] =~ /\[F/ 
@@ -228,16 +229,14 @@ class JavaObjectStream
       (0..arr_items-1).each do |i|
         data[i] = @raw[@ptr+i*arr_size..@ptr+(i+1)*arr_size-1]
       end
+      @handles[handleid][:data] = data
       @ptr += arr_size*arr_items
       return :array, data
 
     when TC_CLASS
-      if @raw[@ptr] == TC_NULL|| TC_REFERENCE || TC_PROXYCLASSDESC
-        class_result = read_content
-
-      else
-        raise "classDesc is #{@raw[@ptr]} invald at #{@ptr}"
-      end
+      type, class_spec = read_content([TC_CLASSDESC, TC_NULL, TC_REFERENCE])
+      class_spec = @handles[class_spec] if type == :ref
+      
       reg_handle(class_spec)
       return :class, nil
     
@@ -388,7 +387,7 @@ class JavaObjectStream
         field_name = read_text
         string_type, classname1 = read_content([TC_STRING, TC_REFERENCE])
         field_type = classname1
-        if classname1_type == :ref
+        if string_type == :ref
           classname1 = @handles[classname1][:content]
         end
       else
