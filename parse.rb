@@ -386,10 +386,11 @@ class JavaObjectStream
       when "[".b # Array
         field_name = read_text
         string_type, classname1 = read_content([TC_STRING, TC_REFERENCE])
-        field_type = classname1
         if string_type == :ref
+          binding.pry
           classname1 = @handles[classname1][:content]
         end
+        field_type = classname1
       else
         raise "Field type 0x#{field_type.unpack1("H*")} not recognized at #{@ptr-1}"
       end
