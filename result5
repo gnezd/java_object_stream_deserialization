@@ -1,7 +1,10 @@
+_________Root_level_content_________
 Reading at 4 having content_flag 0x77
 Reading blockdata of length 21
+_________Root_level_content_________
 Reading at 27 having content_flag 0x74
 Handle 0 for {:type=>"String", :content=>"{\"dataVersion\":3,\"qupathVersion\":\"0.5.1\",\"server\":{\"builderType\":\"uri\",\"providerClassName\":\"qupath.lib.images.servers.bioformats.BioFormatsServerBuilder\",\"uri\":\"file:/H:/Dropbox/RCAS/Workspace/Q1/31Mar/Qupath_datafile/weird.png\",\"args\":[\"--series\",\"0\"],\"metadata\":{\"name\":\"weird.png\",\"width\":760,\"height\":760,\"sizeZ\":1,\"sizeT\":1,\"channelType\":\"DEFAULT\",\"isRGB\":true,\"pixelType\":\"UINT8\",\"levels\":[{\"downsample\":1.0,\"width\":760,\"height\":760}],\"channels\":[{\"name\":\"Red\",\"color\":-65536},{\"name\":\"Green\",\"color\":-16711936},{\"name\":\"Blue\",\"color\":-16776961}],\"pixelCalibration\":{\"pixelWidth\":{\"value\":1.0,\"unit\":\"px\"},\"pixelHeight\":{\"value\":1.0,\"unit\":\"px\"},\"zSpacing\":{\"value\":1.0,\"unit\":\"z-slice\"},\"timeUnit\":\"SECONDS\",\"timepoints\":[]},\"preferredTileWidth\":760,\"preferredTileHeight\":459}},\"id\":\"BioFormatsImageServer: file:/H:/Dropbox/RCAS/Workspace/Q1/31Mar/Qupath_datafile/weird.png[--series, 0]\"}"}
+_________Root_level_content_________
 Reading at 925 having content_flag 0x73
 new object
 Reading at 926 having content_flag 0x72
@@ -72,6 +75,7 @@ read annotation ending at 1091
 block end reached for annotation at 1090
 EO objectAnnotation at 1091
 End of classdata for object declared at 925
+_________Root_level_content_________
 Reading at 1091 having content_flag 0x7e
 Watchout, ENUM at 1091
 Reading at 1092 having content_flag 0x72
@@ -110,6 +114,7 @@ EO superClassDesc of qupath.lib.images.ImageData$ImageType as well as newClassDe
 Handle 9 for {:name=>"qupath.lib.images.ImageData$ImageType", :flag=>18, :fields=>[], :annotations=>[], :superclass=>{:name=>"java.lang.Enum", :flag=>18, :fields=>[], :annotations=>[], :superclass=>nil}}
 Reading at 1174 having content_flag 0x74
 Handle 10 for {:type=>"String", :content=>"BRIGHTFIELD_H_E"}
+_________Root_level_content_________
 Reading at 1192 having content_flag 0x73
 new object
 Reading at 1193 having content_flag 0x72
@@ -147,6 +152,7 @@ read annotation ending at 1461
 block end reached for annotation at 1460
 EO objectAnnotation at 1461
 End of classdata for object declared at 1192
+_________Root_level_content_________
 Reading at 1461 having content_flag 0x73
 new object
 Reading at 1462 having content_flag 0x72
@@ -408,6 +414,7 @@ read annotation ending at 2351
 block end reached for annotation at 2350
 EO objectAnnotation at 2351
 End of classdata for object declared at 1461
+_________Root_level_content_________
 Reading at 2351 having content_flag 0x73
 new object
 Reading at 2352 having content_flag 0x72
@@ -787,7 +794,7 @@ Field type [F called x
 Reading text of length 1 at 3221
 Reading at 3224 having content_flag 0x71
 Reference called 71
-Field type 71 called y
+Field type [F called y
 Start classDescInfo-classAnnotation of qupath.lib.roi.PolygonROI$SerializationProxy
 Reading annotation at 3229
 Reading at 3229 having content_flag 0x78
@@ -799,8 +806,8 @@ Reading at 3230 having content_flag 0x70
 superClassDesc of type null read at 3231
 EO superClassDesc of qupath.lib.roi.PolygonROI$SerializationProxy as well as newClassDesc dec at 3081
 New classDesc received by newObject declared at 3079
-Handle 72 for {:class=>{:name=>"qupath.lib.roi.PolygonROI$SerializationProxy", :flag=>2, :fields=>[["c", "I"], ["t", "I"], ["z", "I"], ["name", "Ljava/lang/String;"], ["stats", "Lqupath/lib/roi/ClosedShapeStatistics;"], ["x", "[F"], ["y", 71]], :annotations=>[], :superclass=>nil}}
-Beginning to deal with classData at 3231, classDescFlag 2 with classes [{:name=>"qupath.lib.roi.PolygonROI$SerializationProxy", :flag=>2, :fields=>[["c", "I"], ["t", "I"], ["z", "I"], ["name", "Ljava/lang/String;"], ["stats", "Lqupath/lib/roi/ClosedShapeStatistics;"], ["x", "[F"], ["y", 71]], :annotations=>[], :superclass=>nil}]
+Handle 72 for {:class=>{:name=>"qupath.lib.roi.PolygonROI$SerializationProxy", :flag=>2, :fields=>[["c", "I"], ["t", "I"], ["z", "I"], ["name", "Ljava/lang/String;"], ["stats", "Lqupath/lib/roi/ClosedShapeStatistics;"], ["x", "[F"], ["y", "[F"]], :annotations=>[], :superclass=>nil}}
+Beginning to deal with classData at 3231, classDescFlag 2 with classes [{:name=>"qupath.lib.roi.PolygonROI$SerializationProxy", :flag=>2, :fields=>[["c", "I"], ["t", "I"], ["z", "I"], ["name", "Ljava/lang/String;"], ["stats", "Lqupath/lib/roi/ClosedShapeStatistics;"], ["x", "[F"], ["y", "[F"]], :annotations=>[], :superclass=>nil}]
 no write class
 c
 I
@@ -815,7 +822,7 @@ Lqupath/lib/roi/ClosedShapeStatistics;
 x
 [F
 y
-71
+[F
 Reading classdata value expecting ["c", "I"] at 3231
 Reading classdata value expecting ["t", "I"] at 3235
 Reading classdata value expecting ["z", "I"] at 3239
@@ -915,27 +922,272 @@ EO superClassDesc of [F as well as newClassDesc dec at 3466
 Handle 76 for {:type=>:array, :class=>{:name=>"[F", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}}
 0
 58
-Reading classdata value expecting ["y", 71] at 3719
-parse.rb:360:in `block in read_values': unknown field type 71 at 3719 (RuntimeError)
-	from parse.rb:320:in `each'
-	from parse.rb:320:in `read_values'
-	from parse.rb:165:in `block in read_content'
-	from parse.rb:159:in `each'
-	from parse.rb:159:in `read_content'
-	from parse.rb:306:in `read_annotation'
-	from parse.rb:183:in `block in read_content'
-	from parse.rb:159:in `each'
-	from parse.rb:159:in `read_content'
-	from parse.rb:306:in `read_annotation'
-	from parse.rb:183:in `block in read_content'
-	from parse.rb:159:in `each'
-	from parse.rb:159:in `read_content'
-	from parse.rb:330:in `block in read_values'
-	from parse.rb:320:in `each'
-	from parse.rb:320:in `read_values'
-	from parse.rb:165:in `block in read_content'
-	from parse.rb:159:in `each'
-	from parse.rb:159:in `read_content'
-	from parse.rb:37:in `initialize'
-	from parse.rb:414:in `new'
-	from parse.rb:414:in `<main>'
+Reading classdata value expecting ["y", "[F"] at 3719
+Array...
+Reading at 3719 having content_flag 0x75
+Array at 3719
+Reading at 3720 having content_flag 0x71
+Reference called 75
+Referencing class spec # 75
+Referenced: {:name=>"[F", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}
+Handle 77 for {:type=>:array, :class=>{:name=>"[F", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}}
+0
+58
+End of classdata for object declared at 3079
+read annotation ending at 3961
+Reading annotation at 3961
+Reading at 3961 having content_flag 0x77
+Reading blockdata of length 8
+read annotation ending at 3971
+Reading annotation at 3971
+Reading at 3971 having content_flag 0x78
+read annotation ending at 3972
+block end reached for annotation at 3971
+EO objectAnnotation at 3972
+Starts reading objectAnnotation for {:name=>"qupath.lib.objects.PathROIObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}} at 3972
+Reading annotation at 3972
+Reading at 3972 having content_flag 0x73
+new object
+Reading at 3973 having content_flag 0x71
+Reference called 60
+Referring to class_desc in @handles[60] for newObject at 3972
+Handle 78 for {:class=>{:name=>"qupath.lib.objects.PathAnnotationObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathROIObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}}}}
+Beginning to deal with classData at 3978, classDescFlag 12 with classes [{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}, {:name=>"qupath.lib.objects.PathROIObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}}, {:name=>"qupath.lib.objects.PathAnnotationObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathROIObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}}}]
+Starts reading objectAnnotation for {:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil} at 3978
+Reading annotation at 3978
+Reading at 3978 having content_flag 0x70
+read annotation ending at 3979
+Reading annotation at 3979
+Reading at 3979 having content_flag 0x70
+read annotation ending at 3980
+Reading annotation at 3980
+Reading at 3980 having content_flag 0x73
+new object
+Reading at 3981 having content_flag 0x71
+Reference called 50
+Referring to class_desc in @handles[50] for newObject at 3980
+Handle 79 for {:class=>{:name=>"qupath.lib.objects.MetadataMap", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}}
+Beginning to deal with classData at 3986, classDescFlag 12 with classes [{:name=>"qupath.lib.objects.MetadataMap", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}]
+Starts reading objectAnnotation for {:name=>"qupath.lib.objects.MetadataMap", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil} at 3986
+Reading annotation at 3986
+Reading at 3986 having content_flag 0x71
+Reference called 54
+read annotation ending at 3991
+Reading annotation at 3991
+Reading at 3991 having content_flag 0x75
+Array at 3991
+Reading at 3992 having content_flag 0x71
+Reference called 55
+Referencing class spec # 55
+Referenced: {:name=>"[Ljava.lang.Object;", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}
+Handle 80 for {:type=>:array, :class=>{:name=>"[Ljava.lang.Object;", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}}
+0
+1
+read annotation ending at 4001
+Reading annotation at 4001
+Reading at 4001 having content_flag 0x71
+Reference called 57
+read annotation ending at 4006
+Reading annotation at 4006
+Reading at 4006 having content_flag 0x75
+Array at 4006
+Reading at 4007 having content_flag 0x71
+Reference called 55
+Referencing class spec # 55
+Referenced: {:name=>"[Ljava.lang.Object;", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}
+Handle 81 for {:type=>:array, :class=>{:name=>"[Ljava.lang.Object;", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}}
+0
+1
+read annotation ending at 4016
+Reading annotation at 4016
+Reading at 4016 having content_flag 0x74
+Handle 82 for {:type=>"String", :content=>"66d377be-73bc-4be7-8b41-efbf2bbb13f7"}
+read annotation ending at 4055
+Reading annotation at 4055
+Reading at 4055 having content_flag 0x78
+read annotation ending at 4056
+block end reached for annotation at 4055
+EO objectAnnotation at 4056
+End of classdata for object declared at 3980
+read annotation ending at 4056
+Reading annotation at 4056
+Reading at 4056 having content_flag 0x70
+read annotation ending at 4057
+Reading annotation at 4057
+Reading at 4057 having content_flag 0x77
+Reading blockdata of length 4
+read annotation ending at 4063
+Reading annotation at 4063
+Reading at 4063 having content_flag 0x71
+Reference called 68
+read annotation ending at 4068
+Reading annotation at 4068
+Reading at 4068 having content_flag 0x70
+read annotation ending at 4069
+Reading annotation at 4069
+Reading at 4069 having content_flag 0x73
+new object
+Reading at 4070 having content_flag 0x71
+Reference called 69
+Referring to class_desc in @handles[69] for newObject at 4069
+Handle 83 for {:class=>{:name=>"qupath.lib.roi.PolygonROI$SerializationProxy", :flag=>2, :fields=>[["c", "I"], ["t", "I"], ["z", "I"], ["name", "Ljava/lang/String;"], ["stats", "Lqupath/lib/roi/ClosedShapeStatistics;"], ["x", "[F"], ["y", "[F"]], :annotations=>[], :superclass=>nil}}
+Beginning to deal with classData at 4075, classDescFlag 2 with classes [{:name=>"qupath.lib.roi.PolygonROI$SerializationProxy", :flag=>2, :fields=>[["c", "I"], ["t", "I"], ["z", "I"], ["name", "Ljava/lang/String;"], ["stats", "Lqupath/lib/roi/ClosedShapeStatistics;"], ["x", "[F"], ["y", "[F"]], :annotations=>[], :superclass=>nil}]
+no write class
+c
+I
+t
+I
+z
+I
+name
+Ljava/lang/String;
+stats
+Lqupath/lib/roi/ClosedShapeStatistics;
+x
+[F
+y
+[F
+Reading classdata value expecting ["c", "I"] at 4075
+Reading classdata value expecting ["t", "I"] at 4079
+Reading classdata value expecting ["z", "I"] at 4083
+Reading classdata value expecting ["name", "Ljava/lang/String;"] at 4087
+Reading at 4087 having content_flag 0x70
+Reading classdata value expecting ["stats", "Lqupath/lib/roi/ClosedShapeStatistics;"] at 4088
+Reading at 4088 having content_flag 0x73
+new object
+Reading at 4089 having content_flag 0x71
+Reference called 73
+Referring to class_desc in @handles[73] for newObject at 4088
+Handle 84 for {:class=>{:name=>"qupath.lib.roi.ClosedShapeStatistics", :flag=>2, :fields=>[["areaCached", "D"], ["centroidXCached", "F"], ["centroidYCached", "F"], ["maxX", "D"], ["maxY", "D"], ["minX", "D"], ["minY", "D"], ["nVertices", "I"], ["perimeterCached", "D"]], :annotations=>[], :superclass=>nil}}
+Beginning to deal with classData at 4094, classDescFlag 2 with classes [{:name=>"qupath.lib.roi.ClosedShapeStatistics", :flag=>2, :fields=>[["areaCached", "D"], ["centroidXCached", "F"], ["centroidYCached", "F"], ["maxX", "D"], ["maxY", "D"], ["minX", "D"], ["minY", "D"], ["nVertices", "I"], ["perimeterCached", "D"]], :annotations=>[], :superclass=>nil}]
+no write class
+areaCached
+D
+centroidXCached
+F
+centroidYCached
+F
+maxX
+D
+maxY
+D
+minX
+D
+minY
+D
+nVertices
+I
+perimeterCached
+D
+Reading classdata value expecting ["areaCached", "D"] at 4094
+Reading classdata value expecting ["centroidXCached", "F"] at 4102
+Reading classdata value expecting ["centroidYCached", "F"] at 4106
+Reading classdata value expecting ["maxX", "D"] at 4110
+Reading classdata value expecting ["maxY", "D"] at 4118
+Reading classdata value expecting ["minX", "D"] at 4126
+Reading classdata value expecting ["minY", "D"] at 4134
+Reading classdata value expecting ["nVertices", "I"] at 4142
+Reading classdata value expecting ["perimeterCached", "D"] at 4146
+End of classdata for object declared at 4088
+Reading classdata value expecting ["x", "[F"] at 4154
+Array...
+Reading at 4154 having content_flag 0x75
+Array at 4154
+Reading at 4155 having content_flag 0x71
+Reference called 75
+Referencing class spec # 75
+Referenced: {:name=>"[F", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}
+Handle 85 for {:type=>:array, :class=>{:name=>"[F", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}}
+0
+80
+Reading classdata value expecting ["y", "[F"] at 4484
+Array...
+Reading at 4484 having content_flag 0x75
+Array at 4484
+Reading at 4485 having content_flag 0x71
+Reference called 75
+Referencing class spec # 75
+Referenced: {:name=>"[F", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}
+Handle 86 for {:type=>:array, :class=>{:name=>"[F", :flag=>2, :fields=>[], :annotations=>[], :superclass=>nil}}
+0
+80
+End of classdata for object declared at 4069
+read annotation ending at 4814
+Reading annotation at 4814
+Reading at 4814 having content_flag 0x77
+Reading blockdata of length 8
+read annotation ending at 4824
+Reading annotation at 4824
+Reading at 4824 having content_flag 0x78
+read annotation ending at 4825
+block end reached for annotation at 4824
+EO objectAnnotation at 4825
+Starts reading objectAnnotation for {:name=>"qupath.lib.objects.PathROIObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}} at 4825
+Reading annotation at 4825
+Reading at 4825 having content_flag 0x78
+read annotation ending at 4826
+block end reached for annotation at 4825
+EO objectAnnotation at 4826
+Starts reading objectAnnotation for {:name=>"qupath.lib.objects.PathAnnotationObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathROIObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}}} at 4826
+Reading annotation at 4826
+Reading at 4826 having content_flag 0x70
+read annotation ending at 4827
+Reading annotation at 4827
+Reading at 4827 having content_flag 0x73
+new object
+Reading at 4828 having content_flag 0x71
+Reference called 27
+Referring to class_desc in @handles[27] for newObject at 4827
+Handle 87 for {:class=>{:name=>"java.util.HashMap", :flag=>3, :fields=>[["loadFactor", "F"], ["threshold", "I"]], :annotations=>[], :superclass=>nil}}
+Beginning to deal with classData at 4833, classDescFlag 3 with classes [{:name=>"java.util.HashMap", :flag=>3, :fields=>[["loadFactor", "F"], ["threshold", "I"]], :annotations=>[], :superclass=>nil}]
+write class
+Reading classdata value expecting ["loadFactor", "F"] at 4833
+Reading classdata value expecting ["threshold", "I"] at 4837
+Starts reading objectAnnotation for {:name=>"java.util.HashMap", :flag=>3, :fields=>[["loadFactor", "F"], ["threshold", "I"]], :annotations=>[], :superclass=>nil} at 4841
+Reading annotation at 4841
+Reading at 4841 having content_flag 0x77
+Reading blockdata of length 8
+read annotation ending at 4851
+Reading annotation at 4851
+Reading at 4851 having content_flag 0x78
+read annotation ending at 4852
+block end reached for annotation at 4851
+EO objectAnnotation at 4852
+End of classdata for object declared at 4827
+read annotation ending at 4852
+Reading annotation at 4852
+Reading at 4852 having content_flag 0x74
+Handle 88 for {:type=>"String", :content=>"EOF"}
+read annotation ending at 4858
+Reading annotation at 4858
+read annotation ending at 4858
+EO objectAnnotation at 4858
+End of classdata for object declared at 3972
+read annotation ending at 4858
+Reading annotation at 4858
+read annotation ending at 4858
+EO objectAnnotation at 4858
+Starts reading objectAnnotation for {:name=>"qupath.lib.objects.PathAnnotationObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathROIObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}}} at 4858
+Reading annotation at 4858
+read annotation ending at 4858
+EO objectAnnotation at 4858
+End of classdata for object declared at 2843
+read annotation ending at 4858
+Reading annotation at 4858
+read annotation ending at 4858
+EO objectAnnotation at 4858
+Starts reading objectAnnotation for {:name=>"qupath.lib.objects.PathRootObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>{:name=>"qupath.lib.objects.PathObject", :flag=>12, :fields=>[], :annotations=>[], :superclass=>nil}} at 4858
+Reading annotation at 4858
+read annotation ending at 4858
+EO objectAnnotation at 4858
+End of classdata for object declared at 2514
+Reading classdata value expecting ["tmaGrid", "Lqupath/lib/objects/hierarchy/TMAGrid;"] at 4858
+parse.rb:344:in `block in read_values': unknown object field type eof at 4858 (RuntimeError)
+	from parse.rb:326:in `each'
+	from parse.rb:326:in `read_values'
+	from parse.rb:169:in `block in read_content'
+	from parse.rb:163:in `each'
+	from parse.rb:163:in `read_content'
+	from parse.rb:39:in `initialize'
+	from parse.rb:420:in `new'
+	from parse.rb:420:in `<main>'

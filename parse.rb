@@ -34,13 +34,17 @@ class JavaObjectStream
     raise "ACED0005 header not found" unless raw[0..3] == STREAM_MAGIC + STREAM_VERSION
     @ptr += 4
 
-    read_content while @ptr < raw.size-1
+    while @ptr < @raw.size-1
+      puts "_________Root_level_content_________"
+      read_content
+    end
   end
 
 # Read all sorts of objects and blockdata
 # Return type and data
 # May be used recursively. Behavior determined by the flag byte
   def read_content(expectation = nil)
+    return :eof, :eof unless @ptr < @raw.size-1
     content_flag = @raw[@ptr]
     while content_flag == "\0".b
       @ptr += 1
@@ -308,6 +312,8 @@ class JavaObjectStream
         if type == :block_end
           puts "block end reached for annotation at #{@ptr-1}"
           break
+        elsif type == :eof
+          break
         end
         annotations.push annotation
       end
@@ -387,7 +393,6 @@ class JavaObjectStream
         field_name = read_text
         string_type, classname1 = read_content([TC_STRING, TC_REFERENCE])
         if string_type == :ref
-          binding.pry
           classname1 = @handles[classname1][:content]
         end
         field_type = classname1
