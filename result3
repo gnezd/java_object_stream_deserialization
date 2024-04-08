@@ -1,0 +1,598 @@
+Reading at 4 having content_flag 0x77
+Reading blockdata of length 21
+Reading at 27 having content_flag 0x74
+Handle 0 for {:type=>"String", :content=>"{\"dataVersion\":3,\"qupathVersion\":\"0.5.1\",\"server\":{\"builderType\":\"uri\",\"providerClassName\":\"qupath.lib.images.servers.bioformats.BioFormatsServerBuilder\",\"uri\":\"file:/H:/Dropbox/RCAS/Workspace/Q1/31Mar/Qupath_datafile/weird.png\",\"args\":[\"--series\",\"0\"],\"metadata\":{\"name\":\"weird.png\",\"width\":760,\"height\":760,\"sizeZ\":1,\"sizeT\":1,\"channelType\":\"DEFAULT\",\"isRGB\":true,\"pixelType\":\"UINT8\",\"levels\":[{\"downsample\":1.0,\"width\":760,\"height\":760}],\"channels\":[{\"name\":\"Red\",\"color\":-65536},{\"name\":\"Green\",\"color\":-16711936},{\"name\":\"Blue\",\"color\":-16776961}],\"pixelCalibration\":{\"pixelWidth\":{\"value\":1.0,\"unit\":\"px\"},\"pixelHeight\":{\"value\":1.0,\"unit\":\"px\"},\"zSpacing\":{\"value\":1.0,\"unit\":\"z-slice\"},\"timeUnit\":\"SECONDS\",\"timepoints\":[]},\"preferredTileWidth\":760,\"preferredTileHeight\":459}},\"id\":\"BioFormatsImageServer: file:/H:/Dropbox/RCAS/Workspace/Q1/31Mar/Qupath_datafile/weird.png[--series, 0]\"}"}
+Reading at 925 having content_flag 0x73
+new object
+Reading at 926 having content_flag 0x72
+Reading text of length 16 at 927
+newClassDesc of class java.util.Locale
+945: ser_ver_uid ..fecf9309c6011f87e
+Handle 1 for {:type=>:class_desc, :name=>"java.util.Locale"}
+953: class_desc_flag 0x03
+Reading fields at 954, expecting 6 fields
+Reading text of length 8 at 957
+Field type I called hashcode
+Reading text of length 7 at 968
+Reading at 977 having content_flag 0x74
+Handle 2 for {:type=>"String", :content=>"Ljava/lang/String;"}
+Field type Ljava/lang/String; called country
+Reading text of length 10 at 999
+Reading at 1011 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called extensions
+Reading text of length 8 at 1017
+Reading at 1027 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called language
+Reading text of length 6 at 1033
+Reading at 1041 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called script
+Reading text of length 7 at 1047
+Reading at 1056 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called variant
+Start classDescInfo-classAnnotation of java.util.Locale
+Reading at 1061 having content_flag 0x78
+block end reached for annotation at 1061
+End of classDescInfo-classAnnotation of java.util.Locale
+superClassDesc
+Reading at 1062 having content_flag 0x70
+EO superClassDesc of java.util.Locale
+New classDesc received by newObject declared at 925
+Handle 3 for {:name=>"java.util.Locale", :flag=>3, :fields=>[["hashcode", "I"], ["country", "Ljava/lang/String;"], ["extensions", "Ljava/lang/String;"], ["language", "Ljava/lang/String;"], ["script", "Ljava/lang/String;"], ["variant", "Ljava/lang/String;"]], :annotations=>[]}
+Beginning to deal with classData at 1063, classDescFlag 3
+Reading classdata value expecting ["hashcode", "I"] at 1063
+Reading classdata value expecting ["country", "Ljava/lang/String;"] at 1067
+Reading at 1067 having content_flag 0x74
+Handle 4 for {:type=>"String", :content=>"US"}
+Reading classdata value expecting ["extensions", "Ljava/lang/String;"] at 1072
+Reading at 1072 having content_flag 0x74
+Handle 5 for {:type=>"String", :content=>""}
+Reading classdata value expecting ["language", "Ljava/lang/String;"] at 1075
+Reading at 1075 having content_flag 0x74
+Handle 6 for {:type=>"String", :content=>"en"}
+Reading classdata value expecting ["script", "Ljava/lang/String;"] at 1080
+Reading at 1080 having content_flag 0x71
+Reference called 5
+Got ref to prevObject at @handles[5]
+Reading classdata value expecting ["variant", "Ljava/lang/String;"] at 1085
+Reading at 1085 having content_flag 0x71
+Reference called 5
+Got ref to prevObject at @handles[5]
+Reads objectAnnotation content
+Reading at 1090 having content_flag 0x78
+end of objectAnnotation content
+End of classdata for object declared at 925
+Reading at 1091 having content_flag 0x7e
+Watchout, ENUM at 1091
+Reading at 1092 having content_flag 0x72
+Reading text of length 37 at 1093
+newClassDesc of class qupath.lib.images.ImageData$ImageType
+1132: ser_ver_uid 0
+Handle 7 for {:type=>:class_desc, :name=>"qupath.lib.images.ImageData$ImageType"}
+1140: class_desc_flag 0x12
+Reading fields at 1141, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.images.ImageData$ImageType
+Reading at 1143 having content_flag 0x78
+block end reached for annotation at 1143
+End of classDescInfo-classAnnotation of qupath.lib.images.ImageData$ImageType
+superClassDesc
+Reading at 1144 having content_flag 0x72
+Reading text of length 14 at 1145
+newClassDesc of class java.lang.Enum
+1161: ser_ver_uid 0
+Handle 8 for {:type=>:class_desc, :name=>"java.lang.Enum"}
+1169: class_desc_flag 0x12
+Reading fields at 1170, expecting 0 fields
+Start classDescInfo-classAnnotation of java.lang.Enum
+Reading at 1172 having content_flag 0x78
+block end reached for annotation at 1172
+End of classDescInfo-classAnnotation of java.lang.Enum
+superClassDesc
+Reading at 1173 having content_flag 0x70
+EO superClassDesc of java.lang.Enum
+EO superClassDesc of qupath.lib.images.ImageData$ImageType
+Handle 9 for {:name=>"qupath.lib.images.ImageData$ImageType", :flag=>18, :fields=>[], :annotations=>[]}
+Reading at 1174 having content_flag 0x74
+Handle 10 for {:type=>"String", :content=>"BRIGHTFIELD_H_E"}
+Reading at 1192 having content_flag 0x73
+new object
+Reading at 1193 having content_flag 0x72
+Reading text of length 41 at 1194
+newClassDesc of class qupath.lib.color.ColorDeconvolutionStains
+1237: ser_ver_uid 100000000000000
+Handle 11 for {:type=>:class_desc, :name=>"qupath.lib.color.ColorDeconvolutionStains"}
+1245: class_desc_flag 0x0c
+Reading fields at 1246, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.color.ColorDeconvolutionStains
+Reading at 1248 having content_flag 0x78
+block end reached for annotation at 1248
+End of classDescInfo-classAnnotation of qupath.lib.color.ColorDeconvolutionStains
+superClassDesc
+Reading at 1249 having content_flag 0x70
+EO superClassDesc of qupath.lib.color.ColorDeconvolutionStains
+New classDesc received by newObject declared at 1192
+Handle 12 for {:name=>"qupath.lib.color.ColorDeconvolutionStains", :flag=>12, :fields=>[], :annotations=>[]}
+Beginning to deal with classData at 1250, classDescFlag 12
+Reads objectAnnotation content
+Reading at 1250 having content_flag 0x77
+Reading blockdata of length 4
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1256 having content_flag 0x74
+Handle 13 for {:type=>"String", :content=>"{\"Name\" : \"H&E default\", \"Stain 1\" : \"Hematoxylin\", \"Values 1\" : \"0.65110783 0.70119304 0.29049426\", \"Stain 2\" : \"Eosin\", \"Values 2\" : \"0.21589894 0.80119605 0.55809725\", \"Background\" : \" 255 255 255\"}"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1460 having content_flag 0x78
+end of objectAnnotation content
+End of classdata for object declared at 1192
+Reading at 1461 having content_flag 0x73
+new object
+Reading at 1462 having content_flag 0x72
+Reading text of length 36 at 1463
+newClassDesc of class qupath.lib.plugins.workflow.Workflow
+1501: ser_ver_uid 100000000000000
+Handle 14 for {:type=>:class_desc, :name=>"qupath.lib.plugins.workflow.Workflow"}
+1509: class_desc_flag 0x0c
+Reading fields at 1510, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.plugins.workflow.Workflow
+Reading at 1512 having content_flag 0x78
+block end reached for annotation at 1512
+End of classDescInfo-classAnnotation of qupath.lib.plugins.workflow.Workflow
+superClassDesc
+Reading at 1513 having content_flag 0x70
+EO superClassDesc of qupath.lib.plugins.workflow.Workflow
+New classDesc received by newObject declared at 1461
+Handle 15 for {:name=>"qupath.lib.plugins.workflow.Workflow", :flag=>12, :fields=>[], :annotations=>[]}
+Beginning to deal with classData at 1514, classDescFlag 12
+Reads objectAnnotation content
+Reading at 1514 having content_flag 0x77
+Reading blockdata of length 8
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1524 having content_flag 0x73
+new object
+Reading at 1525 having content_flag 0x72
+Reading text of length 57 at 1526
+newClassDesc of class qupath.lib.plugins.workflow.DefaultScriptableWorkflowStep
+1585: ser_ver_uid 100000000000000
+Handle 16 for {:type=>:class_desc, :name=>"qupath.lib.plugins.workflow.DefaultScriptableWorkflowStep"}
+1593: class_desc_flag 0x02
+Reading fields at 1594, expecting 3 fields
+Reading text of length 3 at 1597
+Reading at 1602 having content_flag 0x74
+Handle 17 for {:type=>"String", :content=>"Ljava/util/Map;"}
+Field type Ljava/util/Map; called map
+Reading text of length 4 at 1621
+Reading at 1627 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called name
+Reading text of length 6 at 1633
+Reading at 1641 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called script
+Start classDescInfo-classAnnotation of qupath.lib.plugins.workflow.DefaultScriptableWorkflowStep
+Reading at 1646 having content_flag 0x78
+block end reached for annotation at 1646
+End of classDescInfo-classAnnotation of qupath.lib.plugins.workflow.DefaultScriptableWorkflowStep
+superClassDesc
+Reading at 1647 having content_flag 0x70
+EO superClassDesc of qupath.lib.plugins.workflow.DefaultScriptableWorkflowStep
+New classDesc received by newObject declared at 1524
+Handle 18 for {:name=>"qupath.lib.plugins.workflow.DefaultScriptableWorkflowStep", :flag=>2, :fields=>[["map", "Ljava/util/Map;"], ["name", "Ljava/lang/String;"], ["script", "Ljava/lang/String;"]], :annotations=>[]}
+Beginning to deal with classData at 1648, classDescFlag 2
+Reading classdata value expecting ["map", "Ljava/util/Map;"] at 1648
+Reading at 1648 having content_flag 0x73
+new object
+Reading at 1649 having content_flag 0x72
+Reading text of length 34 at 1650
+newClassDesc of class java.util.Collections$SingletonMap
+1686: ser_ver_uid ..f916b7f719109239f
+Handle 19 for {:type=>:class_desc, :name=>"java.util.Collections$SingletonMap"}
+1694: class_desc_flag 0x02
+Reading fields at 1695, expecting 2 fields
+Reading text of length 1 at 1698
+Reading at 1701 having content_flag 0x74
+Handle 20 for {:type=>"String", :content=>"Ljava/lang/Object;"}
+Field type Ljava/lang/Object; called k
+Reading text of length 1 at 1723
+Reading at 1726 having content_flag 0x71
+Reference called 20
+Field type Ljava/lang/Object; called v
+Start classDescInfo-classAnnotation of java.util.Collections$SingletonMap
+Reading at 1731 having content_flag 0x78
+block end reached for annotation at 1731
+End of classDescInfo-classAnnotation of java.util.Collections$SingletonMap
+superClassDesc
+Reading at 1732 having content_flag 0x70
+EO superClassDesc of java.util.Collections$SingletonMap
+New classDesc received by newObject declared at 1648
+Handle 21 for {:name=>"java.util.Collections$SingletonMap", :flag=>2, :fields=>[["k", "Ljava/lang/Object;"], ["v", "Ljava/lang/Object;"]], :annotations=>[]}
+Beginning to deal with classData at 1733, classDescFlag 2
+Reading classdata value expecting ["k", "Ljava/lang/Object;"] at 1733
+Reading at 1733 having content_flag 0x74
+Handle 22 for {:type=>"String", :content=>"Image type"}
+Reading classdata value expecting ["v", "Ljava/lang/Object;"] at 1746
+Reading at 1746 having content_flag 0x71
+Reference called 9
+Got ref to prevObject at @handles[9]
+Reads objectAnnotation content
+Reading at 1751 having content_flag 0x74
+Handle 23 for {:type=>"String", :content=>"Set image type"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1768 having content_flag 0x74
+Handle 24 for {:type=>"String", :content=>"setImageType('BRIGHTFIELD_H_E');"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1803 having content_flag 0x73
+new object
+Reading at 1804 having content_flag 0x71
+Reference called 16
+Referring to class_desc in @handles[16] for newObject at 1803
+Handle 25 for {:name=>"qupath.lib.plugins.workflow.DefaultScriptableWorkflowStep", :flag=>2, :fields=>[["map", "Ljava/util/Map;"], ["name", "Ljava/lang/String;"], ["script", "Ljava/lang/String;"]], :annotations=>[]}
+Beginning to deal with classData at 1809, classDescFlag 2
+Reading classdata value expecting ["map", "Ljava/util/Map;"] at 1809
+Reading at 1809 having content_flag 0x73
+new object
+Reading at 1810 having content_flag 0x72
+Reading text of length 23 at 1811
+newClassDesc of class java.util.LinkedHashMap
+1836: ser_ver_uid ..fbc06c105c4ec034
+Handle 26 for {:type=>:class_desc, :name=>"java.util.LinkedHashMap"}
+1844: class_desc_flag 0x02
+Reading fields at 1845, expecting 1 fields
+Reading text of length 11 at 1848
+Field type Z called accessOrder
+Start classDescInfo-classAnnotation of java.util.LinkedHashMap
+Reading at 1861 having content_flag 0x78
+block end reached for annotation at 1861
+End of classDescInfo-classAnnotation of java.util.LinkedHashMap
+superClassDesc
+Reading at 1862 having content_flag 0x72
+Reading text of length 17 at 1863
+newClassDesc of class java.util.HashMap
+1882: ser_ver_uid ..fd16016c3c1da0705
+Handle 27 for {:type=>:class_desc, :name=>"java.util.HashMap"}
+1890: class_desc_flag 0x03
+Reading fields at 1891, expecting 2 fields
+Reading text of length 10 at 1894
+Field type F called loadFactor
+Reading text of length 9 at 1907
+Field type I called threshold
+Start classDescInfo-classAnnotation of java.util.HashMap
+Reading at 1918 having content_flag 0x78
+block end reached for annotation at 1918
+End of classDescInfo-classAnnotation of java.util.HashMap
+superClassDesc
+Reading at 1919 having content_flag 0x70
+EO superClassDesc of java.util.HashMap
+EO superClassDesc of java.util.LinkedHashMap
+New classDesc received by newObject declared at 1809
+Handle 28 for {:name=>"java.util.LinkedHashMap", :flag=>2, :fields=>[["accessOrder", "Z"]], :annotations=>[]}
+Beginning to deal with classData at 1920, classDescFlag 2
+Reading classdata value expecting ["accessOrder", "Z"] at 1920
+Reads objectAnnotation content
+Reading at 1928 having content_flag 0x77
+Reading blockdata of length 8
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1938 having content_flag 0x74
+Handle 29 for {:type=>"String", :content=>"Name"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1945 having content_flag 0x74
+Handle 30 for {:type=>"String", :content=>"H&E default"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1959 having content_flag 0x74
+Handle 31 for {:type=>"String", :content=>"Stain 1"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1969 having content_flag 0x74
+Handle 32 for {:type=>"String", :content=>"Hematoxylin"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1983 having content_flag 0x74
+Handle 33 for {:type=>"String", :content=>"Values 1"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1994 having content_flag 0x74
+Handle 34 for {:type=>"String", :content=>"0.65111 0.70119 0.29049"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2020 having content_flag 0x74
+Handle 35 for {:type=>"String", :content=>"Stain 2"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2030 having content_flag 0x74
+Handle 36 for {:type=>"String", :content=>"Eosin"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2038 having content_flag 0x74
+Handle 37 for {:type=>"String", :content=>"Values 2"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2049 having content_flag 0x74
+Handle 38 for {:type=>"String", :content=>"0.2159 0.8012 0.5581"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2072 having content_flag 0x74
+Handle 39 for {:type=>"String", :content=>"Background"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2085 having content_flag 0x74
+Handle 40 for {:type=>"String", :content=>" 255 255 255"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2100 having content_flag 0x78
+end of objectAnnotation content
+End of classdata for object declared at 1809
+Reading classdata value expecting ["name", "Ljava/lang/String;"] at 2101
+Reading at 2102 having content_flag 0x74
+Handle 41 for {:type=>"String", :content=>"Set color deconvolution stains"}
+Reading classdata value expecting ["script", "Ljava/lang/String;"] at 2135
+Reading at 2135 having content_flag 0x74
+Handle 42 for {:type=>"String", :content=>"setColorDeconvolutionStains('{\"Name\" : \"H&E default\", \"Stain 1\" : \"Hematoxylin\", \"Values 1\" : \"0.65111 0.70119 0.29049\", \"Stain 2\" : \"Eosin\", \"Values 2\" : \"0.2159 0.8012 0.5581\", \"Background\" : \" 255 255 255\"}');"}
+Reads objectAnnotation content
+Reading at 2350 having content_flag 0x78
+end of objectAnnotation content
+End of classdata for object declared at 1803
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2351 having content_flag 0x73
+new object
+Reading at 2352 having content_flag 0x72
+Reading text of length 48 at 2353
+newClassDesc of class qupath.lib.objects.hierarchy.PathObjectHierarchy
+2403: ser_ver_uid 100000000000000
+Handle 43 for {:type=>:class_desc, :name=>"qupath.lib.objects.hierarchy.PathObjectHierarchy"}
+2411: class_desc_flag 0x02
+Reading fields at 2412, expecting 2 fields
+Reading text of length 10 at 2415
+Reading at 2427 having content_flag 0x74
+Handle 44 for {:type=>"String", :content=>"Lqupath/lib/objects/PathObject;"}
+Field type Lqupath/lib/objects/PathObject; called rootObject
+Reading text of length 7 at 2462
+Reading at 2471 having content_flag 0x74
+Handle 45 for {:type=>"String", :content=>"Lqupath/lib/objects/hierarchy/TMAGrid;"}
+Field type Lqupath/lib/objects/hierarchy/TMAGrid; called tmaGrid
+Start classDescInfo-classAnnotation of qupath.lib.objects.hierarchy.PathObjectHierarchy
+Reading at 2512 having content_flag 0x78
+block end reached for annotation at 2512
+End of classDescInfo-classAnnotation of qupath.lib.objects.hierarchy.PathObjectHierarchy
+superClassDesc
+Reading at 2513 having content_flag 0x70
+EO superClassDesc of qupath.lib.objects.hierarchy.PathObjectHierarchy
+New classDesc received by newObject declared at 2351
+Handle 46 for {:name=>"qupath.lib.objects.hierarchy.PathObjectHierarchy", :flag=>2, :fields=>[["rootObject", "Lqupath/lib/objects/PathObject;"], ["tmaGrid", "Lqupath/lib/objects/hierarchy/TMAGrid;"]], :annotations=>[]}
+Beginning to deal with classData at 2514, classDescFlag 2
+Reading classdata value expecting ["rootObject", "Lqupath/lib/objects/PathObject;"] at 2514
+Reading at 2514 having content_flag 0x73
+new object
+Reading at 2515 having content_flag 0x72
+Reading text of length 33 at 2516
+newClassDesc of class qupath.lib.objects.PathRootObject
+2551: ser_ver_uid 100000000000000
+Handle 47 for {:type=>:class_desc, :name=>"qupath.lib.objects.PathRootObject"}
+2559: class_desc_flag 0x0c
+Reading fields at 2560, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.objects.PathRootObject
+Reading at 2562 having content_flag 0x78
+block end reached for annotation at 2562
+End of classDescInfo-classAnnotation of qupath.lib.objects.PathRootObject
+superClassDesc
+Reading at 2563 having content_flag 0x72
+Reading text of length 29 at 2564
+newClassDesc of class qupath.lib.objects.PathObject
+2595: ser_ver_uid 100000000000000
+Handle 48 for {:type=>:class_desc, :name=>"qupath.lib.objects.PathObject"}
+2603: class_desc_flag 0x0c
+Reading fields at 2604, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.objects.PathObject
+Reading at 2606 having content_flag 0x78
+block end reached for annotation at 2606
+End of classDescInfo-classAnnotation of qupath.lib.objects.PathObject
+superClassDesc
+Reading at 2607 having content_flag 0x70
+EO superClassDesc of qupath.lib.objects.PathObject
+EO superClassDesc of qupath.lib.objects.PathRootObject
+New classDesc received by newObject declared at 2514
+Handle 49 for {:name=>"qupath.lib.objects.PathRootObject", :flag=>12, :fields=>[], :annotations=>[]}
+Beginning to deal with classData at 2608, classDescFlag 12
+Reads objectAnnotation content
+Reading at 2608 having content_flag 0x70
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2609 having content_flag 0x70
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2610 having content_flag 0x73
+new object
+Reading at 2611 having content_flag 0x72
+Reading text of length 30 at 2612
+newClassDesc of class qupath.lib.objects.MetadataMap
+2644: ser_ver_uid 100000000000000
+Handle 50 for {:type=>:class_desc, :name=>"qupath.lib.objects.MetadataMap"}
+2652: class_desc_flag 0x0c
+Reading fields at 2653, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.objects.MetadataMap
+Reading at 2655 having content_flag 0x78
+block end reached for annotation at 2655
+End of classDescInfo-classAnnotation of qupath.lib.objects.MetadataMap
+superClassDesc
+Reading at 2656 having content_flag 0x70
+EO superClassDesc of qupath.lib.objects.MetadataMap
+New classDesc received by newObject declared at 2610
+Handle 51 for {:name=>"qupath.lib.objects.MetadataMap", :flag=>12, :fields=>[], :annotations=>[]}
+Beginning to deal with classData at 2657, classDescFlag 12
+Reads objectAnnotation content
+Reading at 2657 having content_flag 0x73
+new object
+Reading at 2658 having content_flag 0x72
+Reading text of length 17 at 2659
+newClassDesc of class java.lang.Integer
+2678: ser_ver_uid 388781f7a4a0e212
+Handle 52 for {:type=>:class_desc, :name=>"java.lang.Integer"}
+2686: class_desc_flag 0x02
+Reading fields at 2687, expecting 1 fields
+Reading text of length 5 at 2690
+Field type I called value
+Start classDescInfo-classAnnotation of java.lang.Integer
+Reading at 2697 having content_flag 0x78
+block end reached for annotation at 2697
+End of classDescInfo-classAnnotation of java.lang.Integer
+superClassDesc
+Reading at 2698 having content_flag 0x72
+Reading text of length 16 at 2699
+newClassDesc of class java.lang.Number
+2717: ser_ver_uid ..f8be0940b1d95ac86
+Handle 53 for {:type=>:class_desc, :name=>"java.lang.Number"}
+2725: class_desc_flag 0x02
+Reading fields at 2726, expecting 0 fields
+Start classDescInfo-classAnnotation of java.lang.Number
+Reading at 2728 having content_flag 0x78
+block end reached for annotation at 2728
+End of classDescInfo-classAnnotation of java.lang.Number
+superClassDesc
+Reading at 2729 having content_flag 0x70
+EO superClassDesc of java.lang.Number
+EO superClassDesc of java.lang.Integer
+New classDesc received by newObject declared at 2657
+Handle 54 for {:name=>"java.lang.Integer", :flag=>2, :fields=>[["value", "I"]], :annotations=>[]}
+Beginning to deal with classData at 2730, classDescFlag 2
+Reading classdata value expecting ["value", "I"] at 2730
+Reads objectAnnotation content
+Reading at 2734 having content_flag 0x75
+Array at 2734
+Reading at 2735 having content_flag 0x72
+Reading text of length 19 at 2736
+newClassDesc of class [Ljava.lang.Object;
+2757: ser_ver_uid 6c2973109f58ce90
+Handle 55 for {:type=>:class_desc, :name=>"[Ljava.lang.Object;"}
+2765: class_desc_flag 0x02
+Reading fields at 2766, expecting 0 fields
+Start classDescInfo-classAnnotation of [Ljava.lang.Object;
+Reading at 2768 having content_flag 0x78
+block end reached for annotation at 2768
+End of classDescInfo-classAnnotation of [Ljava.lang.Object;
+superClassDesc
+Reading at 2769 having content_flag 0x70
+EO superClassDesc of [Ljava.lang.Object;
+0
+1
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2774 having content_flag 0x74
+Handle 56 for {:type=>"String", :content=>"Object ID"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2786 having content_flag 0x75
+Array at 2786
+Reading at 2787 having content_flag 0x71
+Reference called 55
+0
+1
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2796 having content_flag 0x74
+Handle 57 for {:type=>"String", :content=>"636bcc33-495b-407e-b6b5-8c5ab7b1206b"}
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2835 having content_flag 0x78
+end of objectAnnotation content
+End of classdata for object declared at 2657
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2836 having content_flag 0x70
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2837 having content_flag 0x77
+Reading blockdata of length 4
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2843 having content_flag 0x73
+new object
+Reading at 2844 having content_flag 0x72
+Reading text of length 39 at 2845
+newClassDesc of class qupath.lib.objects.PathAnnotationObject
+2886: ser_ver_uid 100000000000000
+Handle 58 for {:type=>:class_desc, :name=>"qupath.lib.objects.PathAnnotationObject"}
+2894: class_desc_flag 0x0c
+Reading fields at 2895, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.objects.PathAnnotationObject
+Reading at 2897 having content_flag 0x78
+block end reached for annotation at 2897
+End of classDescInfo-classAnnotation of qupath.lib.objects.PathAnnotationObject
+superClassDesc
+Reading at 2898 having content_flag 0x72
+Reading text of length 32 at 2899
+newClassDesc of class qupath.lib.objects.PathROIObject
+2933: ser_ver_uid 100000000000000
+Handle 59 for {:type=>:class_desc, :name=>"qupath.lib.objects.PathROIObject"}
+2941: class_desc_flag 0x0c
+Reading fields at 2942, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.objects.PathROIObject
+Reading at 2944 having content_flag 0x78
+block end reached for annotation at 2944
+End of classDescInfo-classAnnotation of qupath.lib.objects.PathROIObject
+superClassDesc
+Reading at 2945 having content_flag 0x71
+Reference called 48
+EO superClassDesc of qupath.lib.objects.PathROIObject
+EO superClassDesc of qupath.lib.objects.PathAnnotationObject
+New classDesc received by newObject declared at 2843
+Handle 60 for {:name=>"qupath.lib.objects.PathAnnotationObject", :flag=>12, :fields=>[], :annotations=>[]}
+Beginning to deal with classData at 2950, classDescFlag 12
+Reads objectAnnotation content
+Reading at 2950 having content_flag 0x70
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2951 having content_flag 0x70
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 2952 having content_flag 0x73
+new object
+Reading at 2953 having content_flag 0x71
+Reference called 50
+Referring to class_desc in @handles[50] for newObject at 2952
+Handle 61 for {:name=>"qupath.lib.objects.MetadataMap", :flag=>12, :fields=>[[["value", "I"], [""], "Object ID", [""], "636bcc33-495b-407e-b6b5-8c5ab7b1206b", nil], nil, "\x00\x00\x00\x02"], :annotations=>[]}
+Beginning to deal with classData at 2958, classDescFlag 12
+Reading classdata value expecting [["value", "I"], [""], "Object ID", [""], "636bcc33-495b-407e-b6b5-8c5ab7b1206b", nil] at 2958
+not ready for other field types
+
+[1mFrom:[0m /home/gnezd/Dropbox/RCAS/Workspace/Q1/31Mar/Qupath_datafile/parse.rb:279 JavaObjectStream#read_values:
+
+    [1;34m254[0m: [32mdef[0m [1;34mread_values[0m(specs)
+    [1;34m255[0m:   specs.each [32mdo[0m |field|
+    [1;34m256[0m:     puts [31m[1;31m"[0m[31mReading classdata value expecting #{field}[0m[31m at #{@ptr}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m257[0m:     [32mcase[0m field[[1;34m1[0m]
+    [1;34m258[0m:     [32mwhen[0m [31m[1;31m'[0m[31mI[1;31m'[0m[31m[0m
+    [1;34m259[0m:       data = @raw[@ptr..@ptr+[1;34m3[0m].unpack1 [31m[1;31m'[0m[31mN[1;31m'[0m[31m[0m
+    [1;34m260[0m:       @ptr += [1;34m4[0m
+    [1;34m261[0m:     [32mwhen[0m [35m[1;35m/[0m[35m^L[1;35m/[0m[35m[0m
+    [1;34m262[0m:       type, data = read_content([[1;34;4mTC_REFERENCE[0m, [1;34;4mTC_OBJECT[0m, [1;34;4mTC_STRING[0m, [1;34;4mTC_BLOCKDATA[0m])
+    [1;34m263[0m:       [32mif[0m type == [33m:object[0m
+    [1;34m264[0m:       [32melsif[0m type == [33m:ref[0m
+    [1;34m265[0m:         puts [31m[1;31m"[0m[31mGot ref to prevObject at @handles[#{data}[0m[31m][1;31m"[0m[31m[0m
+    [1;34m266[0m:       [32melsif[0m type == [33m:class_desc[0m
+    [1;34m267[0m:       [32melsif[0m type == [33m:string[0m
+    [1;34m268[0m:       [32melse[0m
+    [1;34m269[0m:         binding.pry
+    [1;34m270[0m:       [32mend[0m
+    [1;34m271[0m:     [32mwhen[0m [31m[1;31m'[0m[31mt[1;31m'[0m[31m[0m
+    [1;34m272[0m:       data = read_text
+    [1;34m273[0m:     [32mwhen[0m [31m[1;31m'[0m[31mZ[1;31m'[0m[31m[0m
+    [1;34m274[0m:       [1;34m# Boolean[0m
+    [1;34m275[0m:       data = @raw[@ptr].unpack [31m[1;31m'[0m[31mCCCCCCCC[1;31m'[0m[31m[0m
+    [1;34m276[0m:       @ptr += [1;34m8[0m
+    [1;34m277[0m:     [32melse[0m
+    [1;34m278[0m:       puts [31m[1;31m"[0m[31mnot ready for other field types[1;31m"[0m[31m[0m
+ => [1;34m279[0m:       binding.pry
+    [1;34m280[0m:     [32mend[0m
+    [1;34m281[0m:   [32mend[0m
+    [1;34m282[0m: [32mend[0m
+
+[0GReading classdata value expecting  at 2958

@@ -1,0 +1,52 @@
+Reading at 4 having content_flag 0x77
+Reading blockdata of length 21
+Reading at 27 having content_flag 0x74
+Reading at 925 having content_flag 0x73
+Reading at 926 having content_flag 0x72
+Reading text of length 16 at 927
+945: ser_ver_uid ..fecf9309c6011f87e
+953: class_desc_flag 0x03
+Reading fields at 954, expecting 6 fields
+int
+Reading text of length 8 at 957
+hashcode
+obj
+Reading text of length 7 at 968
+Reading at 977 having content_flag 0x74
+name: country, type: Ljava/lang/String;
+obj
+Reading text of length 10 at 999
+Reading at 1011 having content_flag 0x71
+name: extensions, type: 
+obj
+Reading text of length 8 at 1017
+Reading at 1027 having content_flag 0x71
+name: language, type: 
+obj
+Reading text of length 6 at 1033
+Reading at 1041 having content_flag 0x71
+name: script, type: 
+obj
+Reading text of length 7 at 1047
+Reading at 1056 having content_flag 0x71
+name: variant, type: 
+Reading at 1061 having content_flag 0x78
+Reading at 1062 having content_flag 0x70
+Reading at 1065 having content_flag 0xff
+FF at 1066
+Reading at 1066 having content_flag 0xff
+FF at 1067
+Reading at 1067 having content_flag 0x74
+Reading at 1072 having content_flag 0x74
+Reading at 1075 having content_flag 0x74
+Reading at 1080 having content_flag 0x71
+Reading at 1085 having content_flag 0x71
+Reading at 1090 having content_flag 0x78
+Reading at 1091 having content_flag 0x7e
+Watchout, ENUM at 1092
+Reading at 1092 having content_flag 0x72
+Reading text of length 37 at 1093
+1132: ser_ver_uid 0
+1140: class_desc_flag 0x12
+Reading fields at 1141, expecting 0 fields
+Reading at 1143 having content_flag 0x78

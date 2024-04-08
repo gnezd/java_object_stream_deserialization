@@ -1,0 +1,111 @@
+Reading at 4 having content_flag 0x77
+Reading blockdata of length 21
+Reading at 27 having content_flag 0x74
+Reading at 925 having content_flag 0x73
+new object
+Reading at 926 having content_flag 0x72
+Reading text of length 16 at 927
+newClassDesc of class java.util.Locale
+945: ser_ver_uid ..fecf9309c6011f87e
+953: class_desc_flag 0x03
+Reading fields at 954, expecting 6 fields
+Reading text of length 8 at 957
+Field type I called hashcode
+Reading text of length 7 at 968
+Reading at 977 having content_flag 0x74
+Field type Ljava/lang/String; called country
+Reading text of length 10 at 999
+Reading at 1011 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called extensions
+Reading text of length 8 at 1017
+Reading at 1027 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called language
+Reading text of length 6 at 1033
+Reading at 1041 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called script
+Reading text of length 7 at 1047
+Reading at 1056 having content_flag 0x71
+Reference called 2
+Field type Ljava/lang/String; called variant
+Start classDescInfo-classAnnotation of java.util.Locale
+Reading at 1061 having content_flag 0x78
+block end reached for annotation at 1061
+End of classDescInfo-classAnnotation of java.util.Locale
+superClassDesc
+Reading at 1062 having content_flag 0x70
+EO superClassDesc of java.util.Locale
+New classDesc received by newObject declared at 925
+Beginning to deal with classData at 1063, classDescFlag 3
+Reading classdata value expecting ["hashcode", "I"] at 1063
+Reading classdata value expecting ["country", "Ljava/lang/String;"] at 1067
+Reading at 1067 having content_flag 0x74
+Reading classdata value expecting ["extensions", "Ljava/lang/String;"] at 1072
+Reading at 1072 having content_flag 0x74
+Reading classdata value expecting ["language", "Ljava/lang/String;"] at 1075
+Reading at 1075 having content_flag 0x74
+Reading classdata value expecting ["script", "Ljava/lang/String;"] at 1080
+Reading at 1080 having content_flag 0x71
+Reference called 5
+Got ref to prevObject at @handles[5]
+Reading classdata value expecting ["variant", "Ljava/lang/String;"] at 1085
+Reading at 1085 having content_flag 0x71
+Reference called 5
+Got ref to prevObject at @handles[5]
+Reads objectAnnotation content
+Reading at 1090 having content_flag 0x78
+end of objectAnnotation content
+End of classdata for object declared at 925
+Reading at 1091 having content_flag 0x7e
+Watchout, ENUM at 1091
+Reading at 1092 having content_flag 0x72
+Reading text of length 37 at 1093
+newClassDesc of class qupath.lib.images.ImageData$ImageType
+1132: ser_ver_uid 0
+1140: class_desc_flag 0x12
+Reading fields at 1141, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.images.ImageData$ImageType
+Reading at 1143 having content_flag 0x78
+block end reached for annotation at 1143
+End of classDescInfo-classAnnotation of qupath.lib.images.ImageData$ImageType
+superClassDesc
+Reading at 1144 having content_flag 0x72
+Reading text of length 14 at 1145
+newClassDesc of class java.lang.Enum
+1161: ser_ver_uid 0
+1169: class_desc_flag 0x12
+Reading fields at 1170, expecting 0 fields
+Start classDescInfo-classAnnotation of java.lang.Enum
+Reading at 1172 having content_flag 0x78
+block end reached for annotation at 1172
+End of classDescInfo-classAnnotation of java.lang.Enum
+superClassDesc
+Reading at 1173 having content_flag 0x70
+EO superClassDesc of java.lang.Enum
+EO superClassDesc of qupath.lib.images.ImageData$ImageType
+Reading at 1174 having content_flag 0x74
+Reading at 1192 having content_flag 0x73
+new object
+Reading at 1193 having content_flag 0x72
+Reading text of length 41 at 1194
+newClassDesc of class qupath.lib.color.ColorDeconvolutionStains
+1237: ser_ver_uid 100000000000000
+1245: class_desc_flag 0x0c
+Reading fields at 1246, expecting 0 fields
+Start classDescInfo-classAnnotation of qupath.lib.color.ColorDeconvolutionStains
+Reading at 1248 having content_flag 0x78
+block end reached for annotation at 1248
+End of classDescInfo-classAnnotation of qupath.lib.color.ColorDeconvolutionStains
+superClassDesc
+Reading at 1249 having content_flag 0x70
+EO superClassDesc of qupath.lib.color.ColorDeconvolutionStains
+New classDesc received by newObject declared at 1192
+Beginning to deal with classData at 1250, classDescFlag 12
+Reads objectAnnotation content
+Reading at 1250 having content_flag 0x77
+Reading blockdata of length 4
+end of objectAnnotation content
+Reads objectAnnotation content
+Reading at 1256 having content_flag 0x74
