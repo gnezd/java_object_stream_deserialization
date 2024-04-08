@@ -169,12 +169,9 @@ class JavaObjectStream
           values = read_values(klass[:fields])
           # objectAnnotation
           type = nil
-          while type != :block_end
-            puts "Reads objectAnnotation content for #{klass} at #{@ptr}"
-            type, data = read_content
-            values.push data
-            puts "end of objectAnnotation content"
-          end
+          puts "Starts reading objectAnnotation for #{klass} at #{@ptr}"
+          data = read_annotation
+          puts "EO objectAnnotation at #{@ptr}"
         elsif (klass[:flag] & 0x04 >0) && !(klass[:flag] & 0x08>0)
           # External contents
           puts "externalContent"
@@ -182,12 +179,9 @@ class JavaObjectStream
         elsif (klass[:flag] & 0x04>0) && (klass[:flag] & 0x08>0)
           # objectAnnotation
           type = nil
-          while type != :block_end
-            puts "Reads objectAnnotation content for #{klass} at #{@ptr}"
-            type, data = read_content
-            values.push data
-            puts "end of objectAnnotation content"
-          end
+          puts "Starts reading objectAnnotation for #{klass} at #{@ptr}"
+          data = read_annotation
+          puts "EO objectAnnotation at #{@ptr}"
         else
           puts "questionable flag"
           binding.pry
@@ -309,7 +303,9 @@ class JavaObjectStream
   def read_annotation
       annotations = []
       while true do
+        puts "Reading annotation at #{@ptr}"
         type, annotation = read_content
+        puts "read annotation ending at #{@ptr}"
         if type == :block_end
           puts "block end reached for annotation at #{@ptr-1}"
           break
@@ -318,6 +314,7 @@ class JavaObjectStream
       end
       annotations
   end
+  
   # Read value/classdata
   def read_values(specs)
     values = []
